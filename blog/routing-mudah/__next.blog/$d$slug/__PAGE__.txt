@@ -1,5 +1,0 @@
-1:"$Sreact.fragment"
-2:I[97367,["/praktikum9/_next/static/chunks/ff1a16fafef87110.js","/praktikum9/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
-3:"$Sreact.suspense"
-0:{"buildId":"C8vTVlE5kzNK6dnvAGzzB","rsc":["$","$1","c",{"children":[["$","article",null,{"className":"max-w-2xl mx-auto p-8","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"Routing Sangat Mudah"}],["$","div",null,{"className":"text-gray-500 mb-8","children":["Slug: ","routing-mudah"]}],["$","div",null,{"className":"prose lg:prose-xl","children":["$","p",null,{"children":"Cukup buat folder, jadi deh rute otomatis..."}]}],["$","br",null,{}],["$","a",null,{"href":"/blog","className":"text-blue-600 hover:underline","children":"← Kembali ke Daftar"}]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
-4:null
