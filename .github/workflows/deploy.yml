@@ -1,18 +1,13 @@
-name: Deploy Next.js to Pages
+name: Deploy Next.js to GitHub Pages
 
 on:
   push:
-    branches: ["main"] # Jika branch utamamu 'master', ganti menjadi 'master'
+    branches: ["main"]
 
 permissions:
   contents: read
   pages: write
   id-token: write
-
-# Menghindari bentrokan jika kamu melakukan push berkali-kali dalam waktu singkat
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
 
 jobs:
   build:
@@ -20,19 +15,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
+      
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: 'npm'
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5 # Gunakan v5 untuk stabilitas lebih baik
-
       - name: Install dependencies
-        # 'npm ci' lebih disarankan untuk server karena lebih cepat dan konsisten daripada 'npm install'
-        run: npm install 
+        run: npm install
 
       - name: Build with Next.js
         run: npm run build
@@ -40,7 +31,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Folder 'out' muncul karena kita setting 'output: export' di next.config.mjs
           path: ./out
 
   deploy:
