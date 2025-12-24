@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // Menghasilkan folder 'out'
-  basePath: "/praktikum9", // Sesuaikan dengan nama repo: praktikum9
-  assetPrefix: "/praktikum9", // Sesuaikan dengan nama repo: praktikum9
+  output: "export", 
+  basePath: "/praktikum9", // Pastikan huruf kecil sesuai repo
+  assetPrefix: "/praktikum9", // Pastikan huruf kecil sesuai repo
   images: {
     unoptimized: true,
   },
